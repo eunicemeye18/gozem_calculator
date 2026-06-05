@@ -35,7 +35,7 @@ Dans ce projet, `nomClient`, `nombreCourses` et `distanceKm` sont déclarés ave
 
 Ce projet est un exercice en Dart permettant de calculer le coût d'une course en fonction de la distance parcourue, puis de calculer le coût total pour plusieurs courses.
 
-📋 Description du projet
+ Description du projet
 
 L'application simule un service de transport où :
 
