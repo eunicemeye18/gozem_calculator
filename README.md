@@ -1,3 +1,38 @@
+###  Différence entre `final` et `const`
+
+En Dart, `final` et `const` permettent de déclarer des variables dont la valeur ne peut plus être modifiée après son initialisation. La différence est que `final` reçoit sa valeur lors de l'exécution du programme, tandis que `const` doit recevoir une valeur connue dès la compilation. On utilise donc `final` pour des données qui peuvent varier selon le contexte (nom d'un client, distance parcourue, etc.) et `const` pour des valeurs fixes qui ne changeront jamais (prix par kilomètre, taux fixe, constantes mathématiques, etc.).
+
+**Exemple avec `final` :**
+
+```dart
+final String nomClient = "Koffi";
+final double distanceKm = 4.2;
+```
+
+**Exemple avec `const` :**
+
+```dart
+const int prixParKm = 100;
+const double tauxTVA = 0.18;
+```
+
+**Exemple incorrect :**
+
+```dart
+const DateTime dateActuelle = DateTime.now(); // Erreur
+```
+
+**Exemple correct :**
+
+```dart
+final DateTime dateActuelle = DateTime.now();
+```
+
+Dans ce projet, `nomClient`, `nombreCourses` et `distanceKm` sont déclarés avec `final` car leurs valeurs peuvent changer selon l'utilisateur, tandis que `prixParKm` est déclaré avec `const` car il représente une valeur fixe qui reste la même pour toutes les courses.
+
+
+
+
 Ce projet est un exercice en Dart permettant de calculer le coût d'une course en fonction de la distance parcourue, puis de calculer le coût total pour plusieurs courses.
 
 📋 Description du projet
